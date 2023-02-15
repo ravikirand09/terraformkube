@@ -11,7 +11,7 @@ variable "aws_secret_key" {
 variable "region" {
   description = "The aws region. https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-regions-availability-zones.html"
   type        = string
-  default     = "us-east-1"
+  default     = "us-west-2"
 }
 
 variable "availability_zones_count" {
@@ -42,8 +42,8 @@ variable "tags" {
   description = "A map of tags to add to all resources"
   type        = map(string)
   default = {
-    "Project"     = "TerraformEKSWorkshop"
+    "Project"     = "my-api"
     "Environment" = "Development"
-    "Owner"       = "Ashish Patel"
+    "Owner"       = "Ravi Kiran"
   }
 }
